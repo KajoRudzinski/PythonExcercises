@@ -10,15 +10,12 @@ print(a % b)  # 0 modulo: the reminder after integer division
 
 print()
 
-# example on int / float importance:
-for i in range(1, 4):
-    print(i)
+print(a + b / 3 - 4 * 12)           # - 35.0 due to operator precedence
+print(a+(b/3)-(4*12))               # - 35.0
+print((((a + b) / 3) - 4) * 12)     # 12.0
 
-# Following would result in error:
-# TypeError: 'float' object cannot be interpreted as an integer
-# for i in range(1, a/b):
-#    print(i)
+c = a + b
+d = c / 3
+e = d - 4
+print(e * 12)
 
-# But this will work
-for i in range(1, a // b):
-    print(i)
