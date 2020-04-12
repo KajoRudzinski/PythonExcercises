@@ -26,3 +26,6 @@ several \
 lines"""
 
 print(notSplitString)
+
+print("C:\\Users\\someone\\notes.txt")  # escape with \
+print(r"C:\Users\someone\notes.txt")    # escape with r (used for raw text - regexp)
