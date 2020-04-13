@@ -10,3 +10,15 @@ for i in range(1, 13):
 
 # Basically, indentation tells python if this is still that block
 
+
+# If statements
+name = input("Please enter your name: ")
+age = int(input("How old are you, {}? ".format(name)))
+print(age)
+
+if age >= 18:
+    print("You're old enough to vote")
+    print("Please put an X in the box")
+else:
+    print("Please come back in {} years".format(18 - age))
+
