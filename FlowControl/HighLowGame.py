@@ -29,6 +29,6 @@ while True:
     else:
         print("Please enter h, l or c as advised.")
     guesses += 1    # the same but more efficient than guesses = guesses + 1
-    
+
 # btw python doesn't have a case or switch statement
 
