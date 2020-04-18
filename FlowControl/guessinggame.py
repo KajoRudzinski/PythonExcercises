@@ -1,22 +1,19 @@
-answer = 5
+import random
 
-print("Please guess the number between 1 and 10: ")
-guess = int(input())
+highest = 10
+lowest = 1
+answer = random.randint(lowest, highest)
 
-# if guess < answer:
-#     print("Please get higher")
-#     guess = int(input())
-#     if guess == answer:
-#         print("Correct!")
-#     else:
-#         print("not correct")
-# elif guess > answer:
-#     print("Please get lower")
-#     guess = int(input())
-#     if guess == answer:
-#         print("Correct!")
-#     else:
-#         print("not correct")
-# else:
-#     print("You got it right")
-# above is clearly duplicate code which means it can be improved
+print("Please guess the number between {0} and {1}: ".format(lowest, highest))
+guess = int(input())    # TODO: Finish guessing game
+
+while guess != answer:
+    if guess < answer:
+        print("Try higher: ")
+    else:
+        print("Try lower: ")
+    guess = int(input())
+
+print("Correct!")
+
+
