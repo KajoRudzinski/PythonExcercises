@@ -1,12 +1,12 @@
 # augmented assignment
 
-greeting = "Good"
+saying_hello = "Good"
 
-greeting += " morning"
-print(greeting)
+saying_hello += " morning"
+print(saying_hello)
 
-greeting *= 5
-print(greeting)
+saying_hello *= 5
+print(saying_hello)
 
 number = 5
 multiplier = 8
