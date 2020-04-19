@@ -10,8 +10,8 @@ print("Please think of a number between {} and {}.".format(low, high))
 input("press ENTER to start")
 
 guesses = 1
-while True:
-    print("\tGuessing in the range of {} to {}".format(low, high))
+while low != high:
+    # print("\tGuessing in the range of {} to {}".format(low, high))
     guess = low + (high - low) // 2  # calculates the midpoint to produce the next guess
     high_low = input("My guess is {}. Should I guess higher or lower? Enter h for higher or l for lower. "
                      "If my guess was correct enter c. "
@@ -29,6 +29,10 @@ while True:
     else:
         print("Please enter h, l or c as advised.")
     guesses += 1    # the same but more efficient than guesses = guesses + 1
+else:
+    print("You thought of a number {}".format(low))
+    print("I got it in {} guesses!".format(guesses))
+
 
 # btw python doesn't have a case or switch statement
 
