@@ -20,4 +20,3 @@ class Song
         self.title = title
         self.artist = artist
         self.duration = duration
-    
